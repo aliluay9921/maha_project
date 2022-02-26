@@ -230,7 +230,7 @@
 
         var table = $('.yajra-datatable').DataTable({
             processing: true,
-            serverSide: true,
+            serverSide: false,
             ajax: "{{ route('get.program') }}",
             columns: [{
                     data: 'name',
