@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+
+* {
+    font-family: Cairo;
+
+}
+
+
+
+.button-style {
+    padding: 10px 20px 10px 20px;
+    color: #fff;
+    text-decoration: none !important;
+
+}
+
+.button-style:hover {
+
+    background-color: rgba(106, 107, 106, 0.979);
+    border-radius: 20px;
+    color: #fff;
+}
+
+/* no circle */
+.flickity-button {
+
+    background: transparent;
+}
+
+.flickity-button:hover {
+
+    background: transparent;
+    color: black;
+}
+
+.flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+}
+
+.flickity-button-icon {
+    fill: white;
+}
+
+.flickity-button:disabled {
+    display: none;
+}
+
+.carousel {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    max-width: 780px;
+    height: 500px;
+    border-radius: 20%;
+    margin-bottom: 50px;
+}
+
+.carousel-cell {
+    margin-top: 35px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    float: right;
+    max-width: 300px;
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    counter-increment: carousel-cell;
+    transition: all .3s ease;
+    opacity: 0.3;
+    background: #b9b9b9;
+    filter: blur(6px);
+
+
+}
+
+.carousel-cell.is-selected {
+    filter: blur(0);
+    opacity: 1;
+    background: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* name */
+.carousel-cell .n {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    counter-increment: carousel-cell;
+}
+
+.carousel-cell .content {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+    color: black;
+    counter-increment: carousel-cell;
+}
+
+/* button */
+.carousel-cell .b {
+    cursor: pointer;
+    margin: auto;
+    width: 180px;
+    padding: 1px;
+    background: green;
+    border: 1px solid green;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    counter-increment: carousel-cell;
+    transition: all .3s ease;
+}
+
+/* picture */
+.carousel-cell .p {
+    border-radius: 15px;
+    width: 100%;
+    height: 200px;
+    counter-increment: carousel-cell;
+}
+
+.carousel-cell .b:hover {
+    background: #00e509;
+    transform: scale(1.03);
+    font-size: 16px;
+}
+
+.carousel-cell .b:active {
+    background: white;
+    color: green;
+    transform: scale(0.9);
+    font-size: 16px;
+}
+
+.carousel-cell .download {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    /* margin-top: 100px !important; */
+    position: fixed;
+    bottom: 1px;
+
+}
+
+.carousel-cell .download:hover {
+    background-color: rgb(36, 94, 36);
+
+}
+
+.carousel-cell .b-selected {
+    cursor: pointer;
+    margin: auto;
+    width: 180px;
+    padding: 1px;
+    background: white;
+    border: 1px solid green;
+    border-radius: 15px;
+    font-size: 15px;
+    color: green;
+    text-align: center;
+    counter-increment: carousel-cell;
+    transition: all .3s ease;
+}
+
+.carousel-cell .size {
+    margin-left: 130px;
+    margin-bottom: 15px;
+    font-weight: bold;
+
+}
+
+.more {
+    width: 100% !important;
+    text-align: center;
+    margin-left: 680px;
+    margin-top: 100px;
+
+
+}
+
+.more a {
+    width: 400px !important;
+    color: #fff;
+    background-color: green;
+    border-radius: 30px;
+}
+
+
+/* all programs */
+
+.paper {
+    margin: 4vh;
+    min-width: 20vw;
+    max-width: 40vh;
+    min-height: 20vh;
+    float: left;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(50, 50, 90, .1), 0 5px 15px rgba(0, 0, 0, .07);
+    transition: 0.6s ease;
+    background: white;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.paper:hover {
+    box-shadow: 0 18px 35px rgba(50, 50, 90, .1), 0 8px 15px rgba(0, 0, 0, .07);
+    transform: translateY(-1px);
+}
+
+.paper img {
+    max-width: 100%;
+    max-height: 150px;
+}
+
+.poster {
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 2vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+h1 {
+    color: #303336;
+    letter-spacing: 1px;
+    margin: 2vh 4vw;
+    font-family: 'Playfair Display', serif;
+}
+
+hr {
+    width: 40%;
+    margin: 3vh auto;
+    border: 0;
+    border-bottom: 1px solid #e6e9ec;
+}
+
+.btn_, a.btn_ {
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 1vh 2vh;
+    background: #664ef7;
+    color: white;
+    font-size: 0.8rem;
+    box-shadow: 0 0px 0px rgba(48, 51, 54, 0.1), 0 0px 0px rgba(0, 0, 0, 0);
+    position: absolute;
+    bottom: 5px;
+    left: 150px;
+}
+
+.size_paper {
+    position: absolute;
+    top: 350px;
+}
+
+.btn_, a.btn_:hover {
+    background: #7c66ff;
+    box-shadow: 0 7px 14px rgba(48, 51, 54, 0.1), 0 3px 6px rgba(0, 0, 0, .08);
+    transform: translateY(-1px);
+}
+
+.btn_, a.btn_:active {
+    box-shadow: 0 4px 6px rgba(48, 51, 54, 0.1), 0 1px 3px rgba(0, 0, 0, .12);
+    transform: translateY(1px);
+}
+
+.space {
+    height: 15vh;
+}
