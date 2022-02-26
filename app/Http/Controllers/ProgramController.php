@@ -26,7 +26,6 @@ class ProgramController extends Controller
     {
         $data = Program::latest()->get();
         return Datatables::of($data)
-            ->addIndexColumn()
             ->addColumn('action', function ($row) {
                 return '
                 <a href="/download/' . $row->id . '" class="btn  btn-primary"></i> تحميل البرنامج</a>
