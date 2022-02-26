@@ -17,23 +17,20 @@
     <div class="container-fluid mt-5">
         <div class="row">
             @foreach ($programs as $program)
-
                 <div class="paper">
                     <img class="poster" src="/image/image_program/{{ $program->image }}"
                         style="width: 100px height:150px" />
                     <h2>{{ $program->name }}</h2>
                     <p class="p-2">{{ $program->details }}</p>
                     <span class="size_paper"><b>{{ $program->size }}</b></span>
+                    <hr>
 
-                    <a href="{{ $program->link }}" class="btn_ mb-2">تحميل
+                    <a href="{{ $program->link }}" class="btn_ mb-2 mt-2">تحميل
                     </a>
 
                     <div class="space"></div>
                 </div>
-
             @endforeach
         </div>
     </div>
-
-
 @endsection
