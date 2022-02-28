@@ -84,7 +84,8 @@
                             <a class="button-style" href="{{ route('programs') }}">الادارة</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="button-style" href="{{ route('all_users') }}">المستخدمين</a>
+                            <a class="button-style" href="#">المستخدمين</a>
+                            {{-- href="{{ route('all_users') }}" --}}
                         </li>
                         <li class="nav-item ">
                             <a class="button-style" href="{{ route('home') }}">الصفحة الرئيسية</a>
@@ -108,7 +109,6 @@
                 </div>
             </nav>
         @else
-
             <nav class="navbar navbar-expand-lg navbar-light bg-secondary" dir="rtl">
                 <a class="navbar-brand  text-white" href="#">برامجي</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
