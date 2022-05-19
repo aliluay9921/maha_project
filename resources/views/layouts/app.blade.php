@@ -84,7 +84,7 @@
                             <a class="button-style" href="{{ route('programs') }}">الادارة</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="button-style" href="#">المستخدمين</a>
+                            <a class="button-style" href="{{ route('all_users') }}">المستخدمين</a>
                             {{-- href="{{ route('all_users') }}" --}}
                         </li>
                         <li class="nav-item ">
