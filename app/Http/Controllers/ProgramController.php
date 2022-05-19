@@ -30,10 +30,9 @@ class ProgramController extends Controller
             ->addColumn('action', function ($row) {
                 return '
                 <a href="/download/' . $row->id . '" class="btn  btn-primary"></i> تحميل البرنامج</a>
+                <a href="/delete_program/' . $row->id . '" class="btn  btn-danger"></i> حذف</a>
+                <a href="/edit_program/' . $row->id . '" class="btn  btn-success"></i> تعديل</a>
                 ';
-
-                // <a href="/delete_program/' . $row->id . '" class="btn  btn-danger"></i> حذف</a>
-                // <a href="/edit_program/' . $row->id . '" class="btn  btn-success"></i> تعديل</a>
             })->addColumn('image', function ($row) {
                 return '<img src="/image/image_program/' . $row->image . '" width="100 px" height="50px" class="img-rounded" align="center" />';
             })
